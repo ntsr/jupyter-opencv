@@ -1,0 +1,6 @@
+#!/bin/bash
+
+IMAGE=pyopencv:latest
+NAME=pyopencv
+
+docker run -p 8888:8888 -e JUPYTER_LAB_ENABLE=yes -v $(pwd):/home/jovyan/work --rm -it --name $NAME $IMAGE

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+IMAGE=pyopencv:latest
+
+cmd="docker build -t $IMAGE ."
+echo $cmd
+exec $cmd
+echo "sh run"
